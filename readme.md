@@ -39,12 +39,12 @@ This REST API provides endpoints for retrieving questions related to medication 
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/medication-eligibility-api.git
+   git clone https://github.com/Asakar/ConsultationService.git
    ```
 
 2. Navigate to the project directory:
    ```
-   cd medication-eligibility-api
+   cd ConsultationService
    ```
 
 3. Build the project:
