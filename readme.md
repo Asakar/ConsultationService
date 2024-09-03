@@ -1,4 +1,4 @@
-# Medication Eligibility API
+# Consultation Service
 
 This REST API provides endpoints for retrieving questions related to medication eligibility and submitting answers to determine a customer's eligibility for medication.
 
