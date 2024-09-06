@@ -57,23 +57,23 @@ This REST API provides endpoints for retrieving questions related to medication 
    ./gradlew bootRun
    ```
 
-The API will be available at `http://localhost:8080/api`.
+The API will be available at `http://localhost:8080/consultation`.
 
 ## Usage
 
 ### API Endpoints
 
 1. Get Questions:
-    - Endpoint: `GET /api/questions/{journeyReference}`
+    - Endpoint: `GET /consultation/questions/{journeyReference}`
     - Description: Retrieves a list of questions for a specific journey.
-    - Example: `curl -X GET http://localhost:8080/api/questions/123e4567-e89b-12d3-a456-426614174000`
+    - Example: `curl -X GET http://localhost:8080/consultation/questions/123e4567-e89b-12d3-a456-426614174000`
 
 2. Submit Answers:
-    - Endpoint: `POST /api/answers`
+    - Endpoint: `POST /consultation/answers`
     - Description: Submits answers and returns eligibility status.
     - Example:
       ```
-      curl -X POST http://localhost:8080/api/answers \
+      curl -X POST http://localhost:8080/consultation/answers \
       -H "Content-Type: application/json" \
       -d '[{"questionId":"1","value":"false"},{"questionId":"2","value":"30"},{"questionId":"3","value":"None"}]'
       ```
